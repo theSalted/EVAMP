@@ -1,6 +1,6 @@
-# Embeded Virtural-Reality Arcade Mototcyle Project
+# Embedded Virtural-Reality Arcade Mototcyle Project
 
-Embedede Systems/Controllers code for communicating with SEGA Super Hang-On motorcylce. Part of V.A.M.P.
+Embedded Systems/Controllers code for communicating with SEGA Super Hang-On motorcylce. Part of V.A.M.P.
 
 ![IMG_0752](https://github.com/user-attachments/assets/675d7db9-f8e3-437c-a3ba-9a88a34ee7e7)
 
