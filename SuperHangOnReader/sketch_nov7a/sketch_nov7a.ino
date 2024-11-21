@@ -13,33 +13,33 @@ ArduinoLEDMatrix matrix;
 
 const uint32_t animation[][4] = {
   {
-		0x2202,
-		0x20140140,
-		0x8008000,
+		0x10010,
+		0x2802804,
+		0x40440000,
 		200
 	},
 	{
-		0x44c45,
-		0x229229e1,
-		0x12112000,
+		0x48848,
+		0x87944944,
+		0xa2322000,
 		200
 	},
 	{
-		0x31c4a,
-		0xa4aa7aa4,
-		0xaa4a2000,
+		0x45255,
+		0x255e5525,
+		0x5228c000,
 		200
 	},
 	{
-		0x39c55,
-		0x255255c5,
-		0x50450000,
+		0xa20a,
+		0xa3aa4aa4,
+		0xaa394000,
 		200
 	},
 	{
-		0x70048,
-		0x4807004,
-		0x400000,
+		0x200,
+		0x200e0120,
+		0x1200e000,
 		200
 	},
 	{
@@ -70,11 +70,10 @@ void loop() {
   float voltage2 = (analogValue2 * referenceVoltage) / 1023.0;
 
   // Print the analog values as voltage to the serial monitor
-  Serial.print("Analog Pin A0 Voltage: ");
   Serial.print(voltage0);
-  Serial.print(" V | Analog Pin A1 Voltage: ");
+  Serial.print(",");
   Serial.print(voltage1);
-  Serial.print(" V | Analog Pin A2 Voltage: ");
+  Serial.print(",");
   Serial.println(voltage2);
 
   // Handle LED matrix animation without blocking
@@ -90,6 +89,5 @@ void loop() {
     lastUpdateTime = currentTime;
   }
 
-  // A small delay can be added if necessary, but it should be short to avoid blocking
-  delay(1);  // Keeps the loop running smoothly without much interruption
+  delay(1);  
 }
